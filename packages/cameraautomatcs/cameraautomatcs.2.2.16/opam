@@ -1,0 +1,24 @@
+opam-version: "2.0"
+maintainer: "rudebway@mail.ru"
+authors: ["Rudebway418"]
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+license: "GPL"
+build: [
+  ["mkdir" "-p" "/home/rudebway/cortes/test_services/"]
+]
+remove: [
+  ["rm" "-R" "/home/rudebway/cortes/test_services/cameraautomatcs"]
+]
+synopsis:
+  "cameraautomatcs testing edition"
+url {
+  src: "http://nexus.korda-group.local/repository/binary-storage/cortes/services/cameraautomatcs/2.2.16/cameraautomatcs-2.2.16-x86_64-linux.tar.gz"
+  checksum: "md5=ea14f33a558c1bd90ca9f3376f60071b"
+}
+
+install: [
+  ["cp" "-r" "%{build}%" "/home/rudebway/cortes/test_services/cameraautomatcs/"]
+]
+

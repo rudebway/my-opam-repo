@@ -1,0 +1,24 @@
+opam-version: "2.0"
+maintainer: "rudebway@mail.ru"
+authors: ["Rudebway418"]
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+license: "GPL"
+build: [
+  ["mkdir" "-p" "/home/rudebway/cortes/test_services/"]
+]
+remove: [
+  ["rm" "-R" "/home/rudebway/cortes/test_services/laurenthost"]
+]
+synopsis:
+  "laurenthost testing edition"
+url {
+  src: "http://nexus.korda-group.local/repository/binary-storage/cortes/services/laurenthost/0.0.2/laurenthost-0.0.2-x86_64-linux.tar.gz"
+  checksum: "md5=f7e2fc8140d1bbff885b4f0031abe9b9"
+}
+
+install: [
+  ["cp" "-r" "%{build}%" "/home/rudebway/cortes/test_services/laurenthost/"]
+]
+
