@@ -6,10 +6,10 @@ bug-reports: ""
 dev-repo: ""
 license: "GPL"
 build: [
-  ["mkdir" "-p" "/home/rudebway/cortes/test_services/"]
+  ["mkdir" "-p" "/home/admin/cortes/services/"]
 ]
 remove: [
-  ["rm" "-R" "/home/rudebway/cortes/test_services/cameraautomatcs"]
+  ["rm" "-R" "/home/admin/cortes/services/cameraautomatcs"]
 ]
 synopsis:
   "cameraautomatcs testing edition"
@@ -19,6 +19,6 @@ url {
 }
 
 install: [
-  ["cp" "-r" "%{build}%" "/home/rudebway/cortes/test_services/cameraautomatcs/"]
+  ["cp" "-r" "%{build}%" "/home/admin/cortes/services/cameraautomatcs/"]
 ]
 
