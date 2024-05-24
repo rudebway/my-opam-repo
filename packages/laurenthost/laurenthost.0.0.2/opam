@@ -5,6 +5,9 @@ homepage: ""
 bug-reports: ""
 dev-repo: ""
 license: "GPL"
+depends: [
+  "cameraautomatcs"
+]
 build: [
   ["mkdir" "-p" "/home/admin/cortes/services/"]
 ]
@@ -21,4 +24,3 @@ url {
 install: [
   ["cp" "-r" "%{build}%" "/home/admin/cortes/services/laurenthost/"]
 ]
-
